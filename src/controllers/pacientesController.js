@@ -11,7 +11,7 @@ const PacientesController = {
       
       return res.status(200).json(listaDePacientes)
     } catch (e) {
-      return res.status(400).json('Há um erro na requisição: ' + e)
+      return res.status(400).json('Há um erro na requisição!')
     }
   },
 
@@ -28,7 +28,7 @@ const PacientesController = {
 
 
     } catch (e) {
-      return res.status(404).json('Id não encontrado: ')
+      return res.status(404).json('Id não encontrado!')
     }
   },
 
@@ -43,7 +43,7 @@ const PacientesController = {
       })
 
       if (emailExists) {
-        return res.status(400).json('Já existe um paciente com esse email, por favor, tente outro email')
+        return res.status(400).json('Já existe um paciente com esse email, por favor, tente outro email!')
       }
 
       const novoPaciente = await Pacientes.create({
@@ -54,7 +54,7 @@ const PacientesController = {
 
       return res.status(201).json(req.body)
     } catch (e) {
-      return res.status(400).json('Há um erro na requisição ')
+      return res.status(400).json('Há um erro na requisição')
     }
   },
 
