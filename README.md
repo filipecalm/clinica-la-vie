@@ -59,6 +59,7 @@
     <li> Listar todos os psicólogos, pacientes e atendimentos através do seu respectivo endpoint<br>
     <li> Atualizar dados de psicólogos, pacientes e atendimentos através do ID correspondente.<br>
     <li> Excluir psicólogos e pacientes através do ID correspondente.<br>
+    <br>
     Recursos Extra:
     <li> Informar o total de psicólogos<br>
     <li> Informar o total de pacientes<br>
