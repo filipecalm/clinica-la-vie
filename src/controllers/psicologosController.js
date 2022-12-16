@@ -12,7 +12,7 @@ const psicologosController = {
 
       return res.status(200).json(listaDePsicologos)
     } catch (e) {
-      return res.status(404).json('Id não encontrado: ' + e)
+      return res.status(404).json('Id não encontrado!')
     }
   },
 
@@ -28,7 +28,7 @@ const psicologosController = {
       }
 
     } catch (e) {
-      return res.status(404).json('Id não encontrado: ' + e)
+      return res.status(404).json('Id não encontrado!')
     }
   },
 
