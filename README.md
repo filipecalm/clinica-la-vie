@@ -11,6 +11,15 @@
   </em>
 </p>
 
+### ✅ Divisão de tarefas:
+<p>
+  <em>
+    Utilizamos metodologias ágeis através do kanban e sprints.
+  </em>
+</p>
+
+![kanban](https://user-images.githubusercontent.com/103292859/208189274-bb669b25-eaf5-4a0a-a09f-af5369d16300.png)
+
 ### Desafio:
 <p>
   <em>
