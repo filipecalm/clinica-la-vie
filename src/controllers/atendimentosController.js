@@ -60,32 +60,6 @@ const atendimentosController = {
       return res.status(400).json('Há um erro na requisição! ')
     }
   },
-  async deleteAtendimento(req, res) {
-    try {
-      const { id } = req.params
-
-      const idExists = await Atendimentos.count({
-        where: {
-          id,
-        },
-      })
-
-      if (!idExists) {
-        return res.status(404).json('Id não encontrado')
-      }else {
-        const psicologoDeleted = await Atendimentos.destroy({
-          where: {
-            id,
-          }
-        })
-        return res.status(204).json(psicologoDeleted)
-      }
-
-    } catch (e) {
-      return res.status(500).json('Há um erro na requisição')
-    }
-  },
-
 }
 
 module.exports = atendimentosController
